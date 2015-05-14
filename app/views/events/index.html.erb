@@ -10,8 +10,8 @@
   <tbody>
     <% @events.each do |event| %>
     <tr>
-      <td> <%= event.start %></td>
-      <td> <%= event.finish %></td>
+      <td> <%= event.start.strftime('%m/%d/%Y-%H:%M') %></td>
+      <td> <%= event.finish.strftime('%m/%d/%Y-%H:%M') %></td>
       <td> <%= event.name %></td>
     </tr>
     <% end %>

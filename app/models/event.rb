@@ -1,5 +1,6 @@
 class Event < ActiveRecord::Base
   require 'csv'
+  belongs_to :task
 
   def self.import(file)
     CSV.foreach(file.path, headers: true) do |row|
