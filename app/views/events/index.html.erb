@@ -2,10 +2,21 @@
 
 <table>
   <thead>
-    <tr>  <% @events.each do |event| %>
-      <th> <%= event.track %></th>
+    <tr>
+      <th>
+        Start Time
+      </th>
+      <th>
+        End Time
+      </th>
+      <th>
+        <% @events.each do |event| %>
+          <%= event.track %>
+          <!-- was working on sorting the tracks and eliminating duplicate tracks -->
+        <% end %>
+      </th>
     </tr>
-    <% end %>
+
   </thead>
   <tbody>
     <% @events.each do |event| %>

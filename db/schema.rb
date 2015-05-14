@@ -34,3 +34,9 @@ ActiveRecord::Schema.define(version: 20150514165538) do
   end
 
 end
+
+=begin
+  I noticed that using start time and finish time messed up sorting everything.
+  Instead of having a start -time and an end time, I would have 2 of the same event,
+  one that has start time and one that has end time, that way I would have an easier time with sorting by time.
+=end
